@@ -6,4 +6,4 @@ if('serviceWorker' in navigator){
       .catch(err=>alert(err));
   }
 } 
- 
+ alert('welcome');
