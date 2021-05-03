@@ -5,7 +5,7 @@
   color: #00A3DE;
   box-sizing: border-box; }
   .json-container .line {
-    border-left:1px dotted #555555; /* ☄️ */
+    border-left:1px dotted #aaaaaa; /* ☄️ */
     margin: 4px 0;
     display: flex;
     justify-content: flex-start; }
