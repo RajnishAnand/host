@@ -4,7 +4,7 @@ const cacheAssets=[
   './index.html',
   './main.js' 
   ];
-
+  
 //sw install
 self.addEventListener('install',e=>{
   alert('sw-installed');
