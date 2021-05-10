@@ -97,7 +97,7 @@ function formatString(string) {
   str = str.replace(strikeRegex, strikeThrough);
   str = str.replace(spoilerRegex, spoiler);
   str = str.replace(mentionRegex, mention);
-  //str = linkify(str);
+  str = linkify(str);
   return str;
 }
 function bold(str) {
