@@ -7,12 +7,12 @@ export default function encrypt(m){
 //Below code is for Regex by Arnav
 function formatString(string) {
   var str = string.toString();
-  var boldRegex = /\*\*[^\*\*]+\*\*/g;
-  var italicRegex = /\*\*\*[^\*\*\*]+\*\*\*/g;
+  var boldRegex = /\*\*((?!\*\*).)+\*\*/g;
+  var italicRegex = /\*\*\*((?!\*\*\*).)+\*\*\*/g;
   var strikeRegex = /\~[^\~]+\~/g;
   var codeRegex = /\`[^\`]+\`/g;
   var mentionRegex = /\@[^\@]+\@/g;
-  var spoilerRegex = /\|\|[^\|\|]+\|\|/g;
+  var spoilerRegex = /\|\|((?!\|\|).)+\|\|/g;
   str = str.replace(codeRegex, inlineCodeBlock);
   str = str.replace(italicRegex, italic);
   str = str.replace(boldRegex, bold);
